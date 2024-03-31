@@ -1,0 +1,637 @@
+:root {
+    --font-titles: "Noto Sans", sans-serif;
+    --font-general: "Raleway", sans-serif;
+    --color1: #003366;  /* Encabezados y elementos de navegación */
+    --color2: #66CC99;  /* Fondos o elementos secundarios */
+    --color3: #FF9900;  /* Botones de llamada a la acción o resaltar información importante */
+    --color4: #cfcf90;  /* Destacar información relevante o puntos clave */
+    --color5: #EEEEEE;  /* Fondos, textos y áreas de contraste */
+    --color6: #CCCCCC;  /* Fondos, textos y áreas de contraste */
+    --color7: #222222;  /* Texto en fondo blanco */
+    --whasapp-color: #128C7E;
+}
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-general);
+    background-color: var(--color5);
+    color: var(--color7);
+}
+
+/* MOBILE FIRST */
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.logo-name-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo {
+    width: 2.2rem;
+}
+
+.name,
+.title-1,
+.title-2, 
+.title-3 {
+    margin: 0;
+    font-family: var(--font-titles);
+    text-align: center;
+}
+
+.name {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.open-menu,
+.close-menu {
+    border: none;
+    font-size: 2rem;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--color5);
+    visibility: hidden;
+    opacity: 0;
+}
+
+.close-menu {
+    align-self: flex-end;
+}
+
+.navlist {
+    height: 80%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    list-style-type: none;
+}
+
+.navlink {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--color5);
+}
+
+.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Main */
+/* Hero - Problem description */
+.problem,
+.materias,
+.cursos,
+.quienes-somos {
+    padding: 2rem 1rem;
+    margin-bottom: 2rem;
+}
+
+.problem {
+    margin: 0;
+    padding-top: 6rem;
+    background-color: var(--color1);
+    color: var(--color6);
+}
+
+.title-1 {
+    margin: 0;
+}
+
+.desc-problem {
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.whatsapp-link {
+    width: 75%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    border: 1px solid var(--color4);
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: var(--color3);
+    color: var(--color7);
+}
+
+.fa-whatsapp {
+    font-weight: 800;
+    font-size: 1.8rem;
+    color: var(--whasapp-color);
+}
+
+.profesor-buho-problem-img {
+    width: 80%;
+    max-width: 400px;
+    margin: 2rem auto 0;
+    display: block;
+}
+
+/* Materias */
+.title-2 {
+    margin-bottom: 2.2rem;
+    font-size: 1.8rem;
+}
+
+.materias-container,
+.cursos-cards-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.materia-item,
+.curso-card {
+    width: 80%;
+    max-width: 300px;
+    margin-bottom: 2rem;
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    border: 5px solid var(--color2);
+    border-radius: 20px;
+    background-color: var(--color4);
+}
+
+.materia-img,
+.curso-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.title-3 {
+    font-size: 1.6rem;
+    color: var(--color1);
+}
+
+.materia-target,
+.curso-desc,
+.quienes-somos-desc,
+.contacto-desc {
+    margin: 0;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.matematica {
+    background: url(../assets/images/materias/math.webp) center no-repeat;
+    background-size: cover;
+}
+
+.geometria {
+    background: url(../assets/images/materias/geometry.webp) center no-repeat;
+    background-size: cover;
+}
+
+.fisica {
+    background: url(../assets/images/materias/physics.webp) center no-repeat;
+    background-size: cover;
+}
+
+.quimica {
+    background: url(../assets/images/materias/chemistry.webp) center no-repeat;
+    background-size: cover;
+}
+
+.prueba-ingreso {
+    background: url(../assets/images/materias/test.webp) center no-repeat;
+    background-size: cover;
+}
+
+.calculo {
+    background: url(../assets/images/materias/calculus.webp) center no-repeat;
+    background-size: cover;
+}
+
+.algebra-lineal {
+    background: url(../assets/images/materias/linear-algebra.webp) center no-repeat;
+    background-size: cover;
+}
+
+.edos {
+    background: url(../assets/images/materias/odes.webp) center no-repeat;
+    background-size: cover;
+}
+
+.fundamentos-programacion {
+    background: url(../assets/images/materias/coding.webp) center no-repeat;
+    background-size: cover;
+}
+
+.estatica {
+    background: url(../assets/images/materias/statics.webp) center no-repeat;
+    background-size: cover;
+}
+
+.dinamica {
+    background: url(../assets/images/materias/dynamics.webp) center no-repeat;
+    background-size: cover;
+}
+
+/* Cursos */
+.cursos {
+    margin-top: -2rem;
+    background-color: var(--color6);
+}
+
+.curso-card {
+    background-color: var(--color2);
+}
+
+.python {
+    background: url(../assets/images/cursos/python.webp) center no-repeat;
+    background-size: cover;
+}
+
+.matlab {
+    background: url(../assets/images/cursos/matlab.webp) center no-repeat;
+    background-size: cover;
+}
+
+.solidworks {
+    background: url(../assets/images/cursos/solidworks.webp) center no-repeat;
+    background-size: cover;
+}
+
+/* Quienes somos */
+.quienes-somos {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.quienes-somos-container {
+    margin-top: -2rem;
+    margin-bottom: 2rem;
+}
+
+.quienes-somos-img {
+    width: 80%;
+    max-width: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px var(--color4), 0px 0px 30px var(--color3);
+}
+
+/* Contacto */
+.contacto {
+    padding: 2rem 1rem;
+    background-color: var(--color6);
+}
+
+.contacto-desc {
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+.footer {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color1);
+    color: var(--color5);
+}
+
+@media  screen and (min-width: 768px) {
+    /* Header */
+    .header {
+        padding: 1rem 3rem;
+    }
+
+    .logo {
+        width: 2.8rem;
+    }
+
+    .name {
+        font-size: 1.5rem;
+    }
+
+    .open-menu,
+    .close-menu {
+        font-size: 2.5rem;
+    }
+
+    .navbar {
+        width: 380px;
+        box-shadow: 0 0 0 100vmax #222222bb;
+    }
+
+    .close-menu {
+        margin-top: 1rem;
+        margin-right: 2.5rem;
+    }
+
+    .navlink {
+        font-size: 1.8rem;
+    }
+
+    /* Main */
+    /* Hero - Problem description */
+    .problem,
+    .materias,
+    .cursos,
+    .quienes-somos, 
+    .contacto {
+        padding-bottom: 3rem;
+    }
+
+    .title-1 {
+        margin-bottom: 1rem;
+        font-size: 2.8rem;
+    }
+
+    .desc-problem {
+        width: 550px;
+        margin: 0 auto 3rem;
+        font-size: 1.6rem;
+    }
+
+    .whatsapp-link {
+        max-width: 360px;
+        padding: 1.2rem;
+        gap: 10px;
+        border-width: 2px;
+        font-size: 1.6rem;
+    }
+
+    .fa-whatsapp {
+        font-size: 2rem;
+    }
+
+    .profesor-buho-problem-img {
+        max-width: 450px;
+    }
+
+    /* Materias */
+    .title-2 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .materias-container,
+    .cursos-cards-container {
+        width: 100%;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        column-gap: 1.5rem;
+    }
+
+    .materia-item,
+    .curso-card {
+        justify-content: space-evenly;
+    }
+
+    .materia-item {
+        height: 420px;
+        border: none;
+        box-shadow: 0 0 10px var(--color4);
+        background-color: var(--color5);
+    }
+
+    .title-3 {
+        font-size: 1.8rem;
+    }
+
+    .materia-target,
+    .curso-desc,
+    .quienes-somos-desc,
+    .contacto-desc {
+        font-size: 1.6rem;
+    }
+
+    /* Cursos */
+    .curso-card {
+        min-width: 400px;
+        height: 500px;
+    }
+
+    /* Quienes somos */
+    .quienes-somos-container {
+        margin-bottom: 2.5rem;
+    }
+
+    .quienes-somos-desc {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .quienes-somos-img {
+        box-shadow: 0px 0px 15px var(--color2), 0px 0px 30px var(--color3);
+    }
+
+    /* Contacto */
+    .contacto-desc {
+        width: 80%;
+        margin: -1rem auto 2rem;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 1rem 3rem;
+        font-size: 1.4rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Header */
+    .logo {
+        width: 3rem;
+    }
+
+    .name {
+        font-size: 1.6rem;
+    }
+
+    .open-menu,
+    .close-menu {
+        display: none;
+    }
+
+    .navbar {
+        position: relative;
+        width: unset;
+        height: unset;
+        padding: 0;
+        box-shadow: none;
+        display: unset;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .navlist {
+        margin: 0;        
+        flex-direction: row;
+        justify-content: flex-end;
+        column-gap: 1.2rem;
+    }
+
+    .navlink {
+        padding: 5px;
+        font-weight: 400;
+    }
+
+    .call-to-action-1 {
+        padding: 5px 10px;
+        border-radius: 20px;
+        font-weight: 500;
+        background-color: var(--color2);
+        color: var(--color7);
+    }
+
+    /* Main */
+    /* Hero - Problem description */
+    .problem,
+    .materias,
+    .cursos,
+    .quienes-somos, 
+    .contacto {
+        padding-bottom: 4rem;
+    }
+
+    .problem {
+        width: 100%;
+        padding: 7rem 3rem 4rem;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .problem-info-container {
+        width: 60%;
+        min-width: 540px;
+    }
+
+    .title-1 {
+        font-size: 3rem;
+        text-align: left;
+        color: var(--color2);
+    }
+
+    .desc-problem {
+        width: 100%;
+        text-align: left;
+    }
+
+    .problem-info-container .whatsapp-link {
+        margin-left: 0;
+        gap: 1rem;
+    }
+
+    .profesor-buho-problem-img {
+        width: 40%;
+        min-width: 360px;
+    }
+
+    .title-2 {
+        font-size: 2.7rem;
+    }
+
+    /* Quienes somos */
+    .quienes-somos {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        flex-direction: row;
+        justify-content: space-evenly;
+        column-gap: 2rem;
+    }
+
+    .quienes-somos-container {
+        margin: 0;
+        width: 50%;
+    }
+
+    .quienes-somos-desc {
+        width: 100%;
+    }
+
+    .quienes-somos-img {
+        width: 50%;
+        min-width: 425px;
+    }
+
+    /* Footer */
+    .footer {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .navlink:hover:not(.call-to-action-1) {
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 15px;
+        background-color: var(--color6);
+        color: var(--color1);
+    }
+
+    .call-to-action-1:hover {
+        cursor: pointer;
+        background-color: #ffff70;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Header */
+    .navlist {
+        column-gap: 3rem;
+    }
+
+    .desc-problem {
+        font-size: 1.8rem;
+    }
+}
+
+.whatsapp-link:hover {
+    cursor: pointer;
+    background-color: var(--color2);
+}
