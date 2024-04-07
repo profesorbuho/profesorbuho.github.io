@@ -55,10 +55,10 @@
 </head>
 <body>
     <header class="header">
-        <div class="logo-name-container">
+        <a href="index.html" class="logo-name-container">
             <img src="assets/images/logo/profesor-buho-logo.png" alt="Logo del Profesor Búho" class="logo" loading="lazy">
             <p class="name">Profesor Búho</p>
-        </div>
+        </a>
         <button type="button" class="open-menu" id="open-menu"><i class="fa-solid fa-plus"></i></button>
         <nav class="navbar" id="navbar">
             <button type="button" class="close-menu" id="close-menu"><i class="fa-solid fa-xmark"></i></button>
@@ -84,58 +84,87 @@
             <div class="materias-container">
                 <article class="materia-item">
                     <div class="materia-img matematica"></div>
-                    <h3 class="title-3">Matemáticas / Álgebra</h3>
-                    <p class="materia-target">Bachillerato y Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Matemáticas / Álgebra</h3>
+                        <p class="materia-target">Bachillerato y Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img geometria"></div>
-                    <h3 class="title-3">Geometría<br>(Plana, Del Espacio, Analítica)</h3>
-                    <p class="materia-target">Bachillerato y Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Geometría<br>(Plana, Del Espacio, Analítica)</h3>
+                        <p class="materia-target">Bachillerato y Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img fisica"></div>
-                    <h3 class="title-3">Física<br>(Mecánica Newtoniana)</h3>
-                    <p class="materia-target">Bachillerato y Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Física<br>(Mecánica Newtoniana)</h3>
+                        <p class="materia-target">Bachillerato y Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img quimica"></div>
-                    <h3 class="title-3">Química General</h3>
-                    <p class="materia-target">Bachillerato y Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Química General</h3>
+                        <p class="materia-target">Bachillerato y Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img prueba-ingreso"></div>
-                    <h3 class="title-3">Pruebas de ingreso</h3>
-                    <p class="materia-target">Universidades</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Pruebas de ingreso</h3>
+                        <p class="materia-target">Universidades</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img calculo"></div>
-                    <h3 class="title-3">Cálculo<br>(Diferencial e integral)</h3>
-                    <p class="materia-target">Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Cálculo<br>(Diferencial e integral)</h3>
+                        <p class="materia-target">Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img algebra-lineal"></div>
-                    <h3 class="title-3">Álgebra Lineal</h3>
-                    <p class="materia-target">Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Álgebra Lineal</h3>
+                        <p class="materia-target">Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img edos"></div>
-                    <h3 class="title-3">Ecuaciones Diferenciales Ordinarias</h3>
-                    <p class="materia-target">Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Ecuaciones Diferenciales Ordinarias</h3>
+                        <p class="materia-target">Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img fundamentos-programacion"></div>
-                    <h3 class="title-3">Fundamentos de Programación</h3>
-                    <p class="materia-target">Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Fundamentos de Programación</h3>
+                        <p class="materia-target">Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img estatica"></div>
-                    <h3 class="title-3">Estática</h3>
-                    <p class="materia-target">Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Estática</h3>
+                        <p class="materia-target">Universidad</p>
+                    </div>
                 </article>
                 <article class="materia-item">
                     <div class="materia-img dinamica"></div>
-                    <h3 class="title-3">Dinámica</h3>
-                    <p class="materia-target">Universidad</p>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Dinámica</h3>
+                        <p class="materia-target">Universidad</p>
+                    </div>
+                </article>
+                <article class="materia-item">
+                    <div class="materia-img contabilidad"></div>
+                    <div class="materia-info-container">
+                        <h3 class="title-3">Contabilidad</h3>
+                        <p class="materia-target">Bachillerato y Universidad</p>
+                    </div>
                 </article>
             </div>
         </section>
@@ -144,18 +173,21 @@
             <div class="cursos-cards-container">
                 <article class="curso-card">
                     <div class="curso-img python"></div>
-                    <h3 class="title-3">Programación con Python</h3>
+                    <h3 class="title-3 t3-cursos">Programación con Python</h3>
                     <p class="curso-desc">Descubre Python: desde lo básico hasta proyectos avanzados. ¡Aprende a programar de manera práctica y creativa!</p>
+                    <a class="curso-link"><i class="fa-solid fa-screwdriver-wrench"></i> En construcción</a>
                 </article>
                 <article class="curso-card">
                     <div class="curso-img matlab"></div>
-                    <h3 class="title-3">MATLAB</h3>
+                    <h3 class="title-3 t3-cursos">MATLAB</h3>
                     <p class="curso-desc">Explora MATLAB: desde la manipulación de datos hasta el análisis complejo. ¡Domina una herramienta poderosa para la computación técnica y científica!</p>
+                    <a class="curso-link"><i class="fa-solid fa-screwdriver-wrench"></i> En construcción</a>
                 </article>
                 <article class="curso-card">
                     <div class="curso-img solidworks"></div>
-                    <h3 class="title-3">Solidworks</h3>
+                    <h3 class="title-3 t3-cursos">Solidworks</h3>
                     <p class="curso-desc">Domina SolidWorks: desde los fundamentos hasta el diseño avanzado. ¡Crea modelos 3D impresionantes y da vida a tus ideas!</p>
+                    <a class="curso-link"><i class="fa-solid fa-screwdriver-wrench"></i> En construcción</a>
                 </article>
             </div>
         </section>
