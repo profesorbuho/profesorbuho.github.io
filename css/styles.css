@@ -275,6 +275,11 @@ body {
     background-size: cover;
 }
 
+.ofimatica {
+    background: url(../assets/images/materias/ofimatica.webp) center no-repeat;
+    background-size: cover;
+}
+
 .estatica {
     background: url(../assets/images/materias/statics.webp) center no-repeat;
     background-size: cover;
@@ -282,6 +287,11 @@ body {
 
 .dinamica {
     background: url(../assets/images/materias/dynamics.webp) center no-repeat;
+    background-size: cover;
+}
+
+.estadistica-probabilidad {
+    background: url(../assets/images/materias/estadistica-probabilidad.webp) center no-repeat;
     background-size: cover;
 }
 
