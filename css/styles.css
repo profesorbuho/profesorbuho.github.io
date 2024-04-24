@@ -393,7 +393,7 @@ body {
 
 /* Footer */
 .footer {
-    padding: 1rem;
+    padding: 1.5rem 1rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -538,7 +538,7 @@ body {
 
     /* Footer */
     .footer {
-        padding: 1rem 3rem;
+        padding: 1.5rem 3rem;
         font-size: 1.2rem;
     }
 }
@@ -661,8 +661,7 @@ body {
 
     /* Footer */
     .footer {
-        padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        font-size: 1.2rem;
     }
 
     .navlink:hover:not(.call-to-action-1) {
