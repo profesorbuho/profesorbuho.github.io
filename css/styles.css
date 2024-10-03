@@ -300,6 +300,11 @@ body {
     background-size: cover;
 }
 
+.ingles {
+    background: url(../assets/images/materias/english.webp) center no-repeat;
+    background-size: cover;
+}
+
 /* Cursos */
 .cursos {
     margin-top: -2rem;
