@@ -359,6 +359,7 @@ body {
     text-decoration: none;
     background-color: var(--color4);
     color: inherit;
+    transition: background 0.3s ease;
 }
 
 .fa-screwdriver-wrench {
@@ -389,11 +390,34 @@ body {
 /* Contacto */
 .contacto {
     margin-bottom: -1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--color6);
 }
 
-.contacto-desc {
+.contacto-desc,
+.social-links-container {
     margin-bottom: 2rem;
+}
+
+.t3-social-links {
+    margin-bottom: 1rem;
+    color: var(--color1);
+}
+
+.social-links-container-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--color1);
+    transition: color 0.3s ease;
 }
 
 /* Footer */
@@ -541,6 +565,18 @@ body {
         margin: -1rem auto 2rem;
     }
 
+    .social-links-container {
+        margin-bottom: 1rem;
+    }
+    
+    .social-links-container-items {
+        gap: 2rem;
+    }
+    
+    .social-links {
+        font-size: 2.5rem;
+    }
+
     /* Footer */
     .footer {
         padding: 1.5rem 3rem;
@@ -586,6 +622,7 @@ body {
         font-weight: 500;
         background-color: var(--color2);
         color: var(--color7);
+        transition: background 0.3s ease;
     }
 
     /* Main */
@@ -664,6 +701,24 @@ body {
         margin-bottom: -2rem;
     }
 
+    .contacto-container {
+        width: 60%;
+        min-width: 640px;
+    }
+
+    .t3-social-links {
+        margin-bottom: 1.5rem;
+        font-size: 1.9rem;
+    }
+
+    .social-links-container-items {
+        gap: 2.5rem;
+    }
+
+    .social-link {
+        font-size: 2.8rem;
+    }
+
     /* Footer */
     .footer {
         font-size: 1.2rem;
@@ -701,4 +756,14 @@ body {
     .fa-whatsapp {
         color: var(--color7);
     }
+}
+
+.curso-link:hover {
+    border-color: var(--color5);
+    background-color: var(--color6);
+    color: var(--color7);
+}
+
+.social-link:hover {
+    color: var(--color3);
 }
