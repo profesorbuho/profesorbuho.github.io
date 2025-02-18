@@ -66,6 +66,7 @@ body {
 
 .open-menu,
 .close-menu {
+    cursor: pointer;
     border: none;
     font-size: 2rem;
     background-color: var(--color1);
@@ -345,8 +346,8 @@ body {
     background-size: cover;
 }
 
-.solidworks {
-    background: url(../assets/images/cursos/solidworks.webp) center no-repeat;
+.html {
+    background: url(../assets/images/cursos/html5.webp) center no-repeat;
     background-size: cover;
 }
 
@@ -378,6 +379,10 @@ body {
 
 .quienes-somos-container {
     margin-bottom: 2rem;
+}
+
+.quienes-somos-desc {
+    margin-bottom: 1rem;
 }
 
 .quienes-somos-img {
@@ -556,7 +561,7 @@ body {
 
     .quienes-somos-desc {
         width: 80%;
-        margin: 0 auto;
+        margin: 0 auto 1rem;
     }
 
     /* Contacto */
